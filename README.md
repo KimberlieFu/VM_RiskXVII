@@ -15,7 +15,7 @@ Instructions in the RISK-XVII instruction set architecture are encoded into 4 by
 
 <img width="660" alt="Screenshot 2024-03-28 at 9 53 09 pm" src="https://github.com/KimberlieFu/VM_RiskXVII/assets/89679326/73b42524-cce9-4804-a7ce-b819845a378b">
 
-• `opcode`: Used in all encoding to differentiate the operation, and even the encoding type itself.
-• `rd`, `rs1`, `rs2`: Register specifiers. `rs1` and `rs2` specify registers to be used as the source operand, while `rd` specifies the target register. Note that since there are 32 registers in total, all register specifiers are 5 bits in length.
-• `func3`, `func7`: These are additional opcodes that specify the operation in more detail. For example, all arithmetic instructions may use the same opcode, but the actual operation, e.g., add, logic shift, are defined by the value of `func3`.
-• `imm`: Immediate numbers. These values can be scrambled within the instruction encoding. For example, in SB, the 11th bit of the actual value was encoded at the 7th bit of the instruction, while the 12th bit was encoded at the 31st bit.
+- `opcode`: Used in all encoding to differentiate the operation, and even the encoding type itself.
+- `rd`, `rs1`, `rs2`: Register specifiers. `rs1` and `rs2` specify registers to be used as the source operand, while `rd` specifies the target register. Note that since there are 32 registers in total, all register specifiers are 5 bits in length.
+- `func3`, `func7`: These are additional opcodes that specify the operation in more detail. For example, all arithmetic instructions may use the same opcode, but the actual operation, e.g., add, logic shift, are defined by the value of `func3`.
+- `imm`: Immediate numbers. These values can be scrambled within the instruction encoding. For example, in SB, the 11th bit of the actual value was encoded at the 7th bit of the instruction, while the 12th bit was encoded at the 31st bit.
